@@ -56,6 +56,7 @@
         android:fontFamily="serif"
         android:text="BrainBank"
         android:textAlignment="center"
+        android:textColor="#090909"
         android:textSize="48dp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
