@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity() {
 
         val start = findViewById<Button>(R.id.btnStart)
 
+
         start.setOnClickListener {
             val intent = Intent(this, Quiz::class.java)
             startActivity(intent)
         }
-
     }
 }

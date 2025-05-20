@@ -22,13 +22,13 @@ class Quiz : AppCompatActivity() {
         "The Olympic Games are held every 3 years.",
         "South Africa won the Rugby World Cup in both 1995 and 2019.")
 
-    val arrAnswer = arrayOf(true,
+    val arrAnswers = arrayOf(true,
         false,
         true,
         false,
         true)
 
-    val arrUserAnswer = BooleanArray(5)
+    val arrUserAnswers = BooleanArray(5)
 
     var counter = 0
     var trueFalse = false
@@ -71,7 +71,7 @@ class Quiz : AppCompatActivity() {
         right.setOnClickListener {
             wrong.isEnabled = false
 //            arrUserAnswer.add(true)
-            if(arrUserAnswer == arrAnswer) {
+            if(arrUserAnswers == arrAnswers) {
                 Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show()
                 score++
             } else {
@@ -81,7 +81,7 @@ class Quiz : AppCompatActivity() {
         wrong.setOnClickListener {
             right.isEnabled = false
 //            arrUserAnswer.add(false)
-            if(arrUserAnswer == arrAnswer) {
+            if(arrUserAnswers == arrAnswers) {
                 Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show()
                 score++
             } else {
@@ -99,8 +99,8 @@ class Quiz : AppCompatActivity() {
 
         val intent = Intent(this, Results::class.java).apply {
             putExtra("Questions_Array", arrQuestions) // Add data to pass
-            putExtra("Answer_Array", arrAnswer) // Add data to pass
-            putExtra("UserAnswer_Array", arrUserAnswer) // Add data to pass
+            putExtra("Answer_Array", arrAnswers) // Add data to pass
+            putExtra("UserAnswer_Array", arrUserAnswers) // Add data to pass
             }
         startActivity(intent)
     }

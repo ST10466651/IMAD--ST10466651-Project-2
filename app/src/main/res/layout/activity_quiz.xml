@@ -104,9 +104,9 @@
         android:id="@+id/textTitle"
         android:layout_width="304dp"
         android:layout_height="76dp"
-        android:layout_marginStart="53dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="54dp"
+        android:layout_marginEnd="50dp"
         android:layout_marginBottom="599dp"
         android:fontFamily="serif"
         android:text="QUIZ!!!"
@@ -116,7 +116,28 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="serif"
+        android:text="Topic: Sports"
+        android:textAlignment="center"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/txtQuestions2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
